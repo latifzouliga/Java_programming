@@ -1,0 +1,6 @@
+package ExtraTopics.enums;
+
+public enum Months {
+
+    JANUARY, FEBRUARY, MARCH, APRIL, AMY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
+}
