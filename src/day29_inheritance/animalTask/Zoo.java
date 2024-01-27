@@ -5,17 +5,17 @@ public class Zoo {
     public static void main(String[] args) {
 
         // Dog class
-        // inherited from Anila class
+        // inherited from Animal class
         Dog dog = new Dog();
         dog.setInfo("Max", "Husky","Medium","Black",'M',4);
 
         // Cat class
-        // inherited from Anila class
+        // inherited from Animal class
         Cat cat = new Cat();
         cat.setInfo("Felicia","Stray","Small","Grey",'F',2);
 
         // Tiger class
-        // inherited from Anila class
+        // inherited from Animal class
         Tiger tiger = new Tiger();
         tiger.setInfo("Sher Khan", "Bengal","Large","Orange",'M',6);
 

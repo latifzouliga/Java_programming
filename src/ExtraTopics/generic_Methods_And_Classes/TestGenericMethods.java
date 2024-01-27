@@ -44,28 +44,29 @@ public class TestGenericMethods {
         Object[] ar = reverse(number);
         System.out.println(Arrays.toString(ar));
 
-        Object[] ar1 = Stream.of(1, 2, 3, 4, 5, 6, 7, 8)
+        int[] ar1 = Stream.of(1, 2, 3, 4, 5, 6, 7, 8)
+                .mapToInt(n -> n)
                 .filter(a -> (a >= 3 && a <= 7))
                 .toArray();
         System.out.println(Arrays.toString(ar1));
 
-        int[] arr = {59, 20, 44, 100, 19, 3,600 ,4, 2, 67, 1, 88};
+        int[] arr = {59, 20, 44, 100, 19, 3, 600, 4, 2, 67, 1, 88};
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
-            int k = i -1;
-            while (k >= 0 && arr[k] > temp){
-                arr[k + 1] = arr[k];
+            int k = i - 1;
+            while (k >= 0 && arr[k] > temp) {
+                arr[k+1] = arr[k];
+                arr[k] = temp;
                 k--;
             }
-            arr[k + 1] = temp;
         }
         System.out.println(Arrays.toString(arr));
 
 
-
-
     }
+
+
 
 
     public static <thing> Object[] reverse(thing[] array) {  //reverse double arrays
